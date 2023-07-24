@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 138adabeabed83048bf3b04002a6769b, type: 3}
+  m_Name: CustomRP
+  m_EditorClassIdentifier: 
+  useDynamicBatching: 1
+  useGPUInstancing: 1
+  useSRPBatcher: 1
+  useLightsPerObject: 1
+  tileBasedLightCulling: 0
+  allowHDR: 1
+  deferredShadingSetting:
+    DeferredShading: 1
+    AllowSSR: 0
+    ScreenSpaceReflectionSetting:
+      maxRayMarchingDistance: 20
+      maxRayMarchingStep: 20
+      maxRayMarchingBinarySearchCount: 10
+      rayMarchingStepSize: 2
+      depthThickness: 0.05
+  giSettings:
+    allowIBL: 0
+    diffuseIBL: {fileID: 8900000, guid: 9956f266d5357f04c8b5409dd3bbe420, type: 3}
+    specularIBL: {fileID: 8900000, guid: c0217fae84ac96c498895e2936d6675a, type: 3}
+    brdfLut: {fileID: 2800000, guid: 64b2c99e92aaeb546bba3fa0e8a1041c, type: 3}
+    allowRSM: 1
+    rsmIntensity: 4
+  shadows:
+    maxDistance: 50
+    distanceFade: 0.01
+    directional:
+      atlasSize: 1024
+      filter: 2
+      cascadeBlend: 2
+      cascadeCount: 4
+      cascadeRatio1: 0.1
+      cascadeRatio2: 0.25
+      cascadeRatio3: 0.5
+      cascadeFade: 0.1
+    other:
+      atlasSize: 2048
+      filter: 2
+      PCSS: 0
+      pcssSearchRadius: 0.05
+      pcssFilterRadius: 0.2
+  postFXSettings: {fileID: 11400000, guid: e997b64f493b7734892786a37c25450f, type: 2}
+  colorLUTResolution: 32
