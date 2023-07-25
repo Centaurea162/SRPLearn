@@ -1,12 +1,24 @@
 # SRPLearn
 
-以学习为目的编写基于SRP的unity render pipeline . 
+Unity render pipeline based on SRP api for self study. 
 
-支持技术 : 支持前向渲染和延迟渲染 . 其中前向渲染支持半透明物体渲染 , 支持Forward+渲染 , 延迟渲染则支持分块延迟渲染 . 支持PBR , IBL ; 支持级联阴影 , PCSS软阴影和烘焙阴影 . 支持Reflective Shadow Map全局光照 , 延迟渲染下支持Screen Space Reflection . 支持Bloom , Tone mapping和Color Grading调色 . 
+## Features
 
-unity版本 : 2021.3.0f1c1 
+* Forward+
+* Transparency Object Rendering
+* Tile based Deferred Rendering
+* PBR & IBL
+* Cascade Shadow Maps
+* Percentage Closer Soft Shadows
+* Reflective Shadow Map Global Illumination
+* Screen Space Reflection
+* Bloom
+* Tone mapping & Color Grading
 
-API : DX11
+## Environment
+
+- Unity 2021.3.0f1c1 ，win 10，DX 11
+- MRT supporting GPU
 
 ---
 
@@ -16,29 +28,29 @@ API : DX11
 
 ![image-20230723220210959](README.assets/image-20230723220210959.png)
 
-### 延迟渲染
+### Deferred Rendering
 
 ![image-20230723220801861](README.assets/image-20230723220801861.png)
 
-### Tile based Light Culling	分块延迟渲染
+### Tile based Deferred Rendering/Forward+	
 
-多光源支持
+Multi Light support
 
 ![image-20230724130903097](README.assets/image-20230724130903097.png)
 
-### 级联阴影
+### Cascade Shadow Maps
 
-四级深度图
+4 levels Depth Map
 
 ![image-20230723221916524](README.assets/image-20230723221916524.png)
 
 ![image-20230723221806978](README.assets/image-20230723221806978.png)
 
-PCF滤波后
+Filtered with PCF 5x5
 
 ![image-20230723221954490](README.assets/image-20230723221954490.png)
 
-### PCSS软阴影
+### Percentage Closer Soft Shadows
 
 ![image-20230723223215832](README.assets/image-20230723223215832.png)
 
@@ -64,7 +76,7 @@ RSM ON
 
 -----
 
-## 参考
+## Reference
 
 [1] [Catlike Coding SRP Tutorial](https://catlikecoding.com/unity/tutorials/custom-srp/)
 
